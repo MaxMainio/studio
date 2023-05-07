@@ -29,7 +29,7 @@ window.addEventListener('click', event => {
 
 
 /* JSON FETCH ----------------------------------------------------------------------------------------- */
-fetch('https://maxmain.io/work/lawn-texture/v3/sources/data.json')
+fetch('https://maxmainio.github.io/studio/lawn-texture/v3/sources/data.json')
     .then((response) => response.json())
     .then((json) => {
         const lawn = json[0].words.plants;

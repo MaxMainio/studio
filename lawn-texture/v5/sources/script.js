@@ -36,7 +36,7 @@ function getSpaceWidth() {
 
 
 /* JSON FETCH ======================================================================================================================== */
-fetch('https://maxmain.io/work/lawn-texture/v5/sources/data.json')
+fetch('https://maxmainio.github.io/studio/lawn-texture/v5/sources/data.json')
     .then((response) => response.json())
     .then((json) => {
         const lawn = json.lawn;
