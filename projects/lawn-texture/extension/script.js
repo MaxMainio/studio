@@ -20,7 +20,7 @@ const colorsMapping = {
 
 
 /* JSON FETCH ======================================================================================================================== */
-fetch('https://maxmainio.github.io/studio/lawn-texture/v6/sources/data.json')
+fetch('https://maxmainio.github.io/studio/projects/lawn-texture/v6/sources/data.json')
     .then((response) => response.json())
     .then((json) => {
         const lawn = json.lawn;
