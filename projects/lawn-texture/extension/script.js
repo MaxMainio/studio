@@ -167,18 +167,18 @@ function wrapRest() {
 
 
 /* INTERACTIVE / TRIGGER ============================================================================================================= */
-window.addEventListener('click', event => {
-    spreadFlowers();
-    spreadLawn();
-});
-
-// var intervalId = window.setInterval(function(){
+// window.addEventListener('click', event => {
 //     spreadFlowers();
-// }, 1000);
-
-// var intervalTwoId = window.setInterval(function(){
 //     spreadLawn();
-// }, 2000);
+// });
+
+var intervalId = window.setInterval(function(){
+    spreadFlowers();
+}, 1000);
+
+var intervalTwoId = window.setInterval(function(){
+    spreadLawn();
+}, 2000);
 
 
 
