@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+
+    "name": "WebSosh",
+    "description": "Follow your friend's websites",
+    "version": "1.0",
+    "author": "Max Mainio Beidler",
+
+    "action": {
+        "default_icon": "icon.png",
+        "default_popup": "popup.html",
+        "default_title": "new extension"
+    },    
+
+    "permissions": [
+        "activeTab"
+    ]
+}
