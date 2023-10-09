@@ -1,0 +1,4 @@
+[[headers]]
+  for = "/private/*"
+  [headers.values]
+  Basic-Auth = ":rFuH4pswbcru6GR"
