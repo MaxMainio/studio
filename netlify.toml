@@ -1,4 +1,4 @@
 [[headers]]
   for = "/private/*"
   [headers.values]
-  Basic-Auth = ":rFuH4pswbcru6GR"
+  Basic-Auth = "guest:rFuH4pswbcru6GR"
