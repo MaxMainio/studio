@@ -1,0 +1,71 @@
+/* IMPORTS  --------------------------------------------------------------------------------------------------------------------- */
+@font-face {
+    font-family: "IBM-Plex-Mono";
+    src: url('../assets/IBMPlexMono-Text.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    padding: 1rem;
+}
+
+
+
+
+
+
+
+
+
+p{
+    font-family: IBM-Plex-Mono;
+    font-size: 10rem;
+
+    display: inline-block;
+}
+
+a img.xheight{
+    vertical-align: bottom;
+    border-style: none none solid none;
+    
+    padding-bottom: 0.05em;
+    border-width: 0.1em;
+    margin-bottom: 0.123em;
+}
+
+img.ascender{
+    display: inline-block;
+    vertical-align: baseline;
+    height: 0.74em;
+}
+
+img.descender{
+    display: inline-block;
+    vertical-align: bottom;
+    height: 0.72em;
+    margin-bottom: 0.075em;
+}
+
+img.xheight{
+    display: inline-block;
+    vertical-align: baseline;
+    height: 0.52em;
+}
+
+img + img{
+    margin-left: 0.05em;
+}
