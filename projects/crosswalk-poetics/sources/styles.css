@@ -38,13 +38,20 @@ p{
     display: inline-block;
 }
 
+a:visited{
+    color: blue;
+}
+
 a img.xheight{
     vertical-align: bottom;
     border-style: none none solid none;
+
     
-    padding-bottom: 0.05em;
+    /* padding-bottom: 0.05em; */
+    padding: 0 10px 0.05em 10px;
     border-width: 0.1em;
-    margin-bottom: 0.123em;
+    margin: 0 -10px 0.123em -10px;
+    /* margin-bottom: 0.123em; */
 }
 
 img.ascender{
