@@ -177,7 +177,7 @@ body{
 }
 
 .viewer-container{
-    width: 100%;
+    width: calc(100% - 1px);
     padding: 5px 8px;
     display: flex;
     justify-content: center;
