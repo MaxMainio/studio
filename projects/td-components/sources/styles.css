@@ -54,6 +54,7 @@ body{
     height: 15vh;
     display: flex;
     flex-direction: column;
+    filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.1));
 }
 
 .td-base-comp.small{
@@ -258,3 +259,18 @@ body{
 .spacer{
     height: 5vh;
 }
+
+
+
+
+/* .drop-parent{
+    height: 15vh;
+    filter: drop-shadow(2px 4px 6px red);
+}
+
+.drop-shape{
+    height: 100%;
+    aspect-ratio: 422 / 164;
+    background-color: white;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+} */
