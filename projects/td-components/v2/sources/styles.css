@@ -63,9 +63,15 @@ body{
 /* TD COMPONENT ----------------------------------------------------------------------------------------------------------------- */
 .td-comp{
     height: 15vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.1));
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.1));
+            filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.1));
 
     &.small{aspect-ratio: 202 / 164;}
     &.medium{aspect-ratio: 384 / 164;}
@@ -96,14 +102,21 @@ body{
 
 
 .td-body{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     height: calc(100% - 39px);
 }
 
 .td-side{
     width: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 
     & .td-filler{
         width: 100%;
@@ -175,8 +188,13 @@ body{
 
 
 .td-flag-col{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 
     border-width: 1px;
     border-color: var(--td-border-color);
@@ -203,8 +221,12 @@ body{
     padding: 5px 8px;
 
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     /* align-items: center; */
 
     border-width: 1px;
@@ -237,6 +259,8 @@ body{
 
 .td-footer{
     height: 18px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     background-color: var(--td-panel-color);
 }
