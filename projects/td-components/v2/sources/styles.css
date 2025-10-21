@@ -19,6 +19,7 @@
 /* HTML ------------------------------------------------------------------------------------------------------------------------- */
 :root{
     --td-panel-color:#2B2C2C;
+    --td-panel-color-alt:#cbcbcc;
     --td-bg-color: #1D1D1E;
     --td-light-color: #272729;
     --td-border-color: rgba(255, 255, 255, 0.25);
@@ -72,8 +73,14 @@ body{
 
     &.theme-dark{
         --td-panel: var(--td-panel-color);
+        --td-border: var(--td-bg-color);
         --td-bg: var(--td-bg-color);
-        color: rgba(255, 255, 255, 0.75);
+    }
+
+    &.theme-light{
+        --td-panel: var(--td-panel-color-alt);
+        --td-border: var(--td-panel-color-alt);
+        --td-bg: #FFFFFF;
     }
 }
 
@@ -104,7 +111,7 @@ body{
 
         border-width: 1px;
         border-color: var(--td-border-color);
-        background-color: var(--td-panel-color);
+        background-color: var(--td-panel);
     }
 
     & .td-spacer{
@@ -120,35 +127,46 @@ body{
 
         border-width: 1px;
         border-color: var(--td-border-color);
-        background-color: var(--td-top-color);
     }
 
     & .td-color:first-of-type{
         height: 18px;
         width: 100%;
-
-        background-color: var(--td-top-color);
     }
 
     & .td-color:last-of-type{
         height: 18px;
         width: 100%;
-
-        background-color: var(--td-top-color);
     }
 
 
 
-    &.input{        
+    &.top{--td-color: var(--td-top-color);}
+    &.chop{--td-color: var(--td-chop-color);}
+    &.sop{--td-color: var(--td-sop-color);}
+
+
+
+    &.input{
         & .td-filler{border-style: none none none solid;}
-        & .td-color{border-style: solid none solid solid;}
+
+        & .td-color{
+            background-color: var(--td-color);
+            border-style: solid none solid solid;
+        }
+
         & .td-color:first-of-type{border-style: none none solid solid;}
         & .td-color:last-of-type{border-style: solid none none solid;}
     }
 
-    &.output{        
+    &.output{
         & .td-filler{border-style: none solid none none;}
-        & .td-color{border-style: solid solid solid none;}
+
+        & .td-color{
+            background-color: var(--td-color);
+            border-style: solid solid solid none;
+        }
+
         & .td-color:first-of-type{border-style: none solid solid none;}
         & .td-color:last-of-type{border-style: solid solid none none;}
     }
@@ -184,14 +202,28 @@ body{
 
     padding: 5px 8px;
 
+    position: relative;
     display: flex;
     justify-content: center;
+    /* align-items: center; */
 
     border-width: 1px;
     border-color: var(--td-border-color);
     border-style: none solid none none;
 
     background-color: var(--td-bg-color);
+
+    &::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+
+        border-width: 2px;
+        border-color: var(--td-border);
+        border-style: solid;
+    }
 }
 
 
